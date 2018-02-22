@@ -10,6 +10,46 @@
 }
 
 @font-face {
+  font-family: "ArialNarrowRegular";
+  src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot");
+  src: url("../fonts/ArialNarrowRegular/ArialNarrowRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialNarrowRegular/ArialNarrowRegular.woff") format("woff"),
+  url("../fonts/ArialNarrowRegular/ArialNarrowRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArialNarrowBold";
+  src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot");
+  src: url("../fonts/ArialNarrowBold/ArialNarrowBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialNarrowBold/ArialNarrowBold.woff") format("woff"),
+  url("../fonts/ArialNarrowBold/ArialNarrowBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArialNarrowItalic";
+  src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot");
+  src: url("../fonts/ArialNarrowItalic/ArialNarrowItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialNarrowItalic/ArialNarrowItalic.woff") format("woff"),
+  url("../fonts/ArialNarrowItalic/ArialNarrowItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArialNarrowBoldItalic";
+  src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot");
+  src: url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.woff") format("woff"),
+  url("../fonts/ArialNarrowBoldItalic/ArialNarrowBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: 'ArialMT';
   src: url('../fonts/arialmt/ArialMT.eot?#iefix') format('embedded-opentype'),
     url('../fonts/arialmt/ArialMT.woff') format('woff'),
@@ -67,21 +107,135 @@
   }
 
 /* my styles */
-html, body{
-  width:100%;
-  height: 100%;
-  background: url(../images/2.jpg)
-}
+  html, body{
+    width:100%;
+    height: 100%;
+    background: url(../images/2.jpg)
+  }
 
-.wrapper{
-  margin: 0 auto;
-  width: 980px;
-  min-height: 1000px;
-  background: rebeccapurple;
-}
+  .wrapper{
+    margin: 0 auto;
+    width: 980px;
+    min-height: 1000px;
+    background: rebeccapurple;
+  }
 
-.header{
-  height: 228px;
-  width: 100%;
-  background: red;
-}
+  .header{
+    height: 228px;
+    width: 100%;
+    background: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: 523px 0;
+    position: relative;
+  }
+
+  .top-buttoms{
+    text-align: center;
+  }
+
+  .top-buttom{
+    text-align: center;
+    padding: 6px 0px;
+    width: 123px;
+    margin: 0 2px;
+    display: inline-block;
+    background-image: linear-gradient(to top, #353535 0%, #484848 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    border-radius: 0 0 10px 10px;
+    text-decoration: none;
+    color: #fffefe;
+    font-family: "arialnarrow";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    cursor: url(../images/hand.png), pointer;
+  }
+
+  .basket{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 67px;
+    height: 55px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(to top, #a8892b 0%, #bd9b36 25%, #bd9b36 100%);
+    border-radius: 0 0 4px 4px;
+    cursor: url(../images/hand.png), pointer;
+  }
+
+  .basket:before{
+    content: "";
+    display: block;
+    width: 67px;
+    height: 55px;
+    background: url(../images/basket.png);
+    background-repeat: no-repeat;
+    background-position: 9px 6px;
+  }
+
+  .phone{
+    display: block;
+    position: absolute;
+    color: #fffefe;
+    font-family: "arialnarrow";
+    font-size: 24px;
+    text-decoration: none;
+    top: 71px;
+    left: 346px;
+    cursor: url(../images/hand.png), pointer;
+  }
+
+  .phone:before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 42px;
+    background: url(../images/phone.png);
+    position: absolute;
+    left: -55px;
+    bottom: 0px;
+  }
+
+  .search{
+    position: absolute;
+    /* top:143;
+    left: 224; */
+    width: 370px;
+    height: 40px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(to top, #353535 0%, #484848 100%);
+  }
+
+  .search input[type="search"]{
+    
+    margin: 7px 136px 6px 8px;
+    width: 226px;
+    height: 27px;
+    border: 1px solid #969696;
+    background-color: #606060;
+  }
+
+  .search input[type="search"]:focus{
+    outline: none;
+  }
+
+  .search button{
+    width: 106px;
+    height: 29px;
+    border: 1px solid #000000;
+    background-color: #ba9835;
+    position: absolute;
+    top: 6px;
+    right: 17px;
+    color: #fffefe;
+    font-family: "arialnarrow";
+    font-size: 14px;
+    font-weight: 700;
+    /* letter-spacing: 0.35px; */
+    cursor: url(../images/hand.png), pointer;
+  }
+
+  .search button:focus{
+    outline: none;
+  }
