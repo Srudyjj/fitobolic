@@ -117,7 +117,7 @@
     margin: 0 auto;
     width: 980px;
     min-height: 1000px;
-    /* background: rebeccapurple; */
+    background: rebeccapurple;
   }
 
   .header{
@@ -130,8 +130,7 @@
   }
 
   .top-buttoms{
-    position:absolute;
-    left: 344px;
+    padding-left: 343px;
 
   }
 
@@ -139,7 +138,7 @@
     text-align: center;
     padding: 6px 0px;
     width: 123px;
-    margin: 0 2px;
+    margin: 0 1px;
     display: inline-block;
     background-image: linear-gradient(to top, #353535 0%, #484848 100%);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
@@ -150,12 +149,11 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
-    cursor: url(../images/hand.png), pointer;
-    box-sizing: border-box;
   }
 
   .basket{
     position: absolute;
+    top: 0;
     right: 0;
     display: block;
     width: 67px;
@@ -178,14 +176,15 @@
   }
 
   .phone{
+    position: relative;
     display: block;
-    position: absolute;
+    margin:  44px 0 50px 346px;
     color: #fffefe;
     font-family: "arialnarrow";
     font-size: 24px;
     text-decoration: none;
-    top: 71px;
-    left: 346px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
     cursor: url(../images/hand.png), pointer;
   }
 
@@ -199,15 +198,10 @@
     left: -55px;
     bottom: 0px;
   }
-  .top-menu{
-    position: relative;
-    left: 190px;
-    top: -85px;
-  }
-
+ 
   .search{
-    margin-left: 50px;
-    width: 380px;
+    margin-left: 224px;
+    width: 370px;
     height: 40px;
     position: relative;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
@@ -218,7 +212,7 @@
 
   .search input[type="search"]{
     
-    margin: 7px 136px 6px 20px;
+    margin: 7px 136px 6px 8px;
     width: 226px;
     height: 27px;
     border: 1px solid #969696;
@@ -242,7 +236,6 @@
     font-family: "arialnarrow";
     font-size: 14px;
     font-weight: 700;
-    /* letter-spacing: 0.35px; */
     cursor: url(../images/hand.png), pointer;
     box-sizing: border-box;
   }
@@ -252,9 +245,8 @@
   }
 
   .main-menu{
-    position: absolute;
-    display: inline-block;
-    /* width: 790px; */
+    margin-left: 183px;
+    text-align: right;
     height: 40px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
     background-image: linear-gradient(to top, #1e1e1e 0%, #303030 100%);
@@ -270,14 +262,13 @@
 
   .in-main-menu{
     display: block;
-    padding: 13px 8px 14px 8px;
+    padding: 13px 7px 14px 7px;
     color: #fffefe;
     font-family: "ArialNarrowBold";
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
-    /* Text style for "Fitabolic" */
-    /* letter-spacing: 0.35px; */
+    letter-spacing: 0.35px;
   }
 
   .in-main-menu:hover{
@@ -300,8 +291,8 @@
   .logo{
     position: absolute;
     z-index: 1;
-    left: -190px;
-    bottom: -62px;
+    left: 0;
+    bottom: -14px;
     /* background: rgba(255, 217, 0, 0.356); */
     width: 273px;
     height: 196px;
@@ -311,8 +302,8 @@
     position: absolute;
     z-index: 2;
     display: block;
-    left: 28px;
-    bottom: 5px;
+    left: 26px;
+    bottom: 4px;
   }
 
   .logo-bg{
@@ -323,6 +314,8 @@
     height: 118px;
     transform: skewX(-33deg);
     overflow: hidden;
+    box-shadow: 3px 0 4px #000000;
+    border-radius: 0 8px 0 0;
     /* transform: rotate(33deg); */
   }
 
@@ -336,13 +329,15 @@
     border: 1px solid #debe5d;
     background-color: #c0a040;
     background-image: linear-gradient(to top, #b19234 0%, #b19234 40%, #c0a040 100%);
-    border-radius: 18px;
+    border-radius: 18px 8px 18px 18px;;
     transform: skewX(33deg);
     box-sizing: border-box;
+    
     /* transform: rotate(-33deg); */
   }
 
   .banner{
+    margin-top: 46px;
     height: 231px;
     background: #1d1d1d;
     border: 10px solid #616161;
