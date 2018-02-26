@@ -580,7 +580,9 @@
 
 
   h2{
+    margin-top: 16px;
     margin-left: 2px;
+    margin-bottom: 12px;
     width: 141px;
     height: 21px;
     color: #3ec1f8;
@@ -590,4 +592,117 @@
     letter-spacing: 0.55px;
   }
 
+  .hits{
+    background: #333333;
+    padding-bottom: 20px;
+    padding-top: 6px;
+    width: 900px;
+  }
+
+  .hits li{
+    padding: 14px;
+    display: inline-block;
+    font-size: 0;
+    background: red;
+  }
+
+  .img{
+    display: block;
+    height: 121px;
+    width: 179px;
+    background: #666666;
+    border: 5px solid #666666;
+    overflow: hidden;
+  }
+
+  li form{
+    display: inline-block;
+    height: 328px;
+    width: 189px;
+    background: rgb(40, 180, 56);
+    
+  }
+
+  form h3{
+    color: #dbdb13;
+    font-family: "arialnarrow";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.45px;
+    margin: 10px 1px;
+  }
+
+  form p{
+    color: #ffffff;
+    font-family: "arialnarrow";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+  }
+
+  .row{
+    margin: 18px 0;
+  }
+
+  .row input[type="text"]{
+    display: inline-block;
+    height: 23px;
+    width: 47px;
+    color: #000000;
+    font-family: "ArialMT";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    box-sizing: border-box;
+    border: 1px solid #969696;
+  }
+
+  .qty{
+    display: inline-block;
+    margin: 8px 10px 7px 5px;
+  }
+
+  .row select{
+    width: 67px;
+    height: 23px;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-left: 13px;
+  }
+
+  .size{
+    display: inline-block;
+    margin: 6px 0 7px 5px;
+  }
+
+  .prise{
+    display: inline-block;
+    color: #ba9835;
+    font-family: "arialnarrow";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    margin: 6px 0;
+  }
+
+  .prise span{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+  }
+
+  .bay{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    color: #c39b25;
+    font-family: "Arial Narrow";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    background-image: url(../images/bcaa.jpg)
+  }
   
+
