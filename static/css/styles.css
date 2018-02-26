@@ -219,10 +219,12 @@
     border: 1px solid #969696;
     background-color: #606060;
     box-sizing: border-box;
+    padding-left:30px;
   }
 
   .search input[type="search"]:focus{
     outline: none;
+    
   }
 
   .search button{
@@ -593,17 +595,19 @@
   }
 
   .hits{
+    position: relative;
     background: #333333;
-    padding-bottom: 20px;
-    padding-top: 6px;
-    width: 900px;
+    padding: 16px 16px 0 16px;
+    width: 903px;
+    border: 1px solid #838282;
+    box-sizing: border-box;
   }
 
   .hits li{
-    padding: 14px;
+    padding: 14px 10px 20px 14px;
     display: inline-block;
     font-size: 0;
-    background: red;
+    /* background: red; */
   }
 
   .img{
@@ -619,8 +623,11 @@
     display: inline-block;
     height: 328px;
     width: 189px;
-    background: rgb(40, 180, 56);
-    
+    /* background: rgb(40, 180, 56); */
+  }
+
+  li form:focus{
+    outline: none;
   }
 
   form h3{
@@ -638,6 +645,12 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
+    
+  }
+
+  .description{
+    height: 67px;
+    overflow: hidden;
   }
 
   .row{
@@ -655,6 +668,12 @@
     letter-spacing: 0.4px;
     box-sizing: border-box;
     border: 1px solid #969696;
+    text-align: right;
+    padding: 0 5px;
+  }
+
+  .row input[type="text"]:focus{
+    outline: none;
   }
 
   .qty{
@@ -668,12 +687,22 @@
     border: 1px solid #969696;
     box-sizing: border-box;
     background-color: #ffffff;
-    margin-left: 13px;
+    margin-left: 10px;
+    color: #000000;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    padding: 0 5px;
+  }
+
+  .row select:focus{
+    outline: none;
   }
 
   .size{
     display: inline-block;
-    margin: 6px 0 7px 5px;
+    margin: 6px 0 5px 5px;
   }
 
   .prise{
@@ -683,26 +712,52 @@
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    font-size: 14px;
-    letter-spacing: 0.35px;
-    margin: 6px 0;
   }
 
-  .prise span{
+  .prise>span{
     font-size: 14px;
     letter-spacing: 0.35px;
   }
 
   .bay{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
     height: 25px;
     width: 100px;
     border-radius: 5px;
     color: #c39b25;
-    font-family: "Arial Narrow";
+    font-family: "ArialMT";
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
-    background-image: url(../images/bcaa.jpg)
+    background-image: url(../images/button-bg.png);
+    background-position: -2px -2px;
+    margin-left: 35px;
   }
+
+  .bay:focus{
+    outline: none;
+  }
+
+  .goods-arrow-left{
+    left:-14px;
+    top: 87px;
+  }
+
+  .goods-arrow-right{
+    right: -14px;
+    transform: rotate(180deg);
+    top: 87px;
+  }
+
+  .new-title{
+    padding:12px 0 10px 0;
+  }
+
+  
   
 
