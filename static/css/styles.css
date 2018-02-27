@@ -719,7 +719,7 @@
     letter-spacing: 0.35px;
   }
 
-  .bay{
+  .black-button{
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -739,7 +739,7 @@
     margin-left: 35px;
   }
 
-  .bay:focus{
+  .black-button:focus{
     outline: none;
   }
 
@@ -764,7 +764,7 @@
     padding-top: 23px;
     padding-bottom: 9px;
     padding-left: 3px;
-    background: cadetblue;
+    /* background: cadetblue; */
     margin-left: -10px;
   }
 
@@ -773,6 +773,7 @@
     width: 164px;
     height: 261px;
     margin: 10px;
+    margin-bottom: 42px;
   }
 
   .news div{
@@ -797,7 +798,7 @@
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
-    margin-top: 15px;
+    margin-top: 5px;
   }
   .title{
     width: 140px;
@@ -822,25 +823,69 @@
 
   .read-more{
     position: relative;
+    display: inline-block;
     color: #dbdb13;
     font-family: "arialnarrow";
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.35px;
-    margin-top: 6px;
+    margin-top: 9px;
   }
 
   .read-more:before{
     position: absolute;
     content:"";
-    display: block;
+    display: inline-block;
     height: 5px;
     width: 5px;
     border-right: 1px solid #dbdb13;
     border-bottom: 1px solid #dbdb13;
     transform: rotate(-45deg);
-    right:0; 
-    top: 0;
+    right:-7px; 
+    top: 4px;
+  }
+
+  .subscribe{
+    float: left;
+    width: 219px;
+    /* background: #dbdb13; */
+    margin-bottom: 21px;
+  }
+
+  .subscribe h2{
+    margin-top: 0;
+  }
+
+  .subscribe input[type="email"]{
+    width: 219px;
+    height: 29px;
+    box-sizing: border-box;
+    border: 1px solid #a8a8a8;
+    margin-top: 21px;
+  }
+
+  .sub{
+    margin-top: 24px;
+    margin-left: 119px;
+
+  }
+
+  .about{
+    float: right;
+    width: 630px;
+    margin: 0;
+    max-height: none;
+    line-height: 1.3;
+    margin-bottom: 21px;
+    margin-right: 30px;
+    
+  }
+  .about span{
+    font-weight: 700;
+  }
+
+  .about a{
+    color: #dbdb13;
   }
   
 
