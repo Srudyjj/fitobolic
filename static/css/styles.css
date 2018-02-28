@@ -118,7 +118,7 @@
     margin: 0 auto;
     width: 980px;
     min-height: 1000px;
-    background: rebeccapurple;
+    /* background: rebeccapurple; */
   }
 
   .header{
@@ -888,4 +888,82 @@
     color: #dbdb13;
   }
   
+  footer{
+    margin: 30px 0 42px;
+    padding: 0 28px;
+    background: #1d1d1d;
+    border: 10px solid #616161;
+    box-shadow: 0 0 4px #000000;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  footer p{
+    line-height:48px;
+    text-align: center;
+    color: #a9a9a9;
+    font-family: "Arial Narrow";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    display: inline-block;
+    margin-right: 120px;
+
+  }
+
+  footer p span{
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+  }
+
+  .social{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .social li{
+    display: inline-block;
+    margin: 4px;
+    font-size: o;
+  }
+
+  footer li a{
+    display: block;
+    background: rosybrown;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+  }
+
+  #s1{
+    background: url(../images/social.png);
+  }
+
+  #s2{
+    background: url(../images/social.png);
+    background-position: -44px 0;
+  }
+
+  #s3{
+    background: url(../images/social.png);
+    background-position: -88px 0;
+  }
+
+  #s4{
+    background: url(../images/social.png);
+    background-position: -132px 0;
+  }
+
+  #s5{
+    background: url(../images/social.png);
+    background-position: -176px 0;
+  }
+
+  #s6{
+    background: url(../images/social.png);
+    background-position: -218px 0;
+  }
 
