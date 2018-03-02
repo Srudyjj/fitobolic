@@ -108,11 +108,24 @@
   }
 
 /* my styles */
+ 
+
+
   html, body{
     width:100%;
     height: 100%;
-    background: url(../images/2.jpg)
+    background: url(../images/2.jpg);    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
   }
+
+  a:any-link{
+    text-decoration: none;
+  }
+  a:-webkit-any-link{
+    text-decoration: none;
+  }
+
 
   .wrapper{
     margin: 0 auto;
@@ -177,6 +190,7 @@
   }
 
   .phone{
+    width:200px;
     position: relative;
     display: block;
     margin:  44px 0 50px 346px;
@@ -255,11 +269,14 @@
     background-image: linear-gradient(to top, #1e1e1e 0%, #303030 100%);
     border-radius: 0 0 7px 7px;
     padding: 0 21px 0 95px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-size: 0; 
   }
 
   .main-menu li{
     display: inline-block;
+    font-size: 0; 
+    
 
   }
 
@@ -267,11 +284,19 @@
     display: block;
     padding: 13px 7px 14px 7px;
     color: #fffefe;
-    font-family: "ArialNarrowBold";
+    font-family: "arialnarrow";
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     letter-spacing: 0.35px;
+    
+  }
+
+  /* Правило только для Firefox */
+  @-moz-document url-prefix() {
+    .in-main-menu {
+      font-weight: normal !important;
+    }
   }
 
   .in-main-menu:hover{
@@ -366,7 +391,7 @@
     height: 50px;
     border: 1px solid #000000;
     background-color: #ba9835;
-    top:50%;
+    top: 50%;
     margin-top: -25px;
     z-index: 1;
   }
@@ -401,6 +426,7 @@
     background-image: linear-gradient(to top, #b19234 0%, #b19234 40%, #c0a040 100%);
     border-radius: 18px 18px 0 0;
     overflow: hidden;
+    font-size: 0;
 
   }
 
@@ -410,16 +436,16 @@
     box-shadow: none;
     display: inline-block;
     margin: 0;
+    font-size: 0; 
   }
 
   .content-menu-item{
     display:block;
-    text-shadow: 0 0 6px rgba(133, 107, 33, 0.75);
     background-image: linear-gradient(to top, #b19234 0%, #b19234 40%, #c0a040 100%);
-    
     padding: 9px 35px;
     border-left: 4px solid #6c685c;
-    transform: skewX(-33deg); 
+    transform: skewX(-33deg);
+    text-decoration: none;
   }
 
   .content-menu-item p{
@@ -431,8 +457,14 @@
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
-    text-decoration: none; 
+    
     text-shadow: 0 0 6px rgba(133, 107, 33, 0.75);
+  }
+  /*Правило только для Firefox*/
+  @-moz-document url-prefix() {
+    .content-menu-item p {
+      font-weight: normal !important;
+    }
   }
 
   .content{
@@ -485,10 +517,7 @@
     text-decoration: none;
     line-height: 0.7;
   }
-
-  a:-webkit-any-link{
-    text-decoration: none;
-  }
+  
 
   #item1{
     background: url(../images/spritemenu.png);
@@ -585,7 +614,7 @@
     margin-top: 16px;
     margin-left: 2px;
     margin-bottom: 12px;
-    width: 141px;
+    /* width: 141px; */
     height: 21px;
     color: #3ec1f8;
     font-family: "ArialMT";
@@ -705,7 +734,7 @@
     margin: 6px 0 5px 5px;
   }
 
-  .prise{
+  .priсe{
     display: inline-block;
     color: #ba9835;
     font-family: "arialnarrow";
@@ -714,12 +743,13 @@
     letter-spacing: 0.5px;
   }
 
-  .prise>span{
+  .priсe>span{
     font-size: 14px;
     letter-spacing: 0.35px;
   }
 
   .black-button{
+    display: inline-block;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -745,13 +775,17 @@
 
   .goods-arrow-left{
     left:-14px;
-    top: 87px;
+    top: 121px;
   }
 
   .goods-arrow-right{
-    right: -14px;
+    right: 14px;
     transform: rotate(180deg);
-    top: 87px;
+    top: 121px;
+  }
+  
+  .fix{
+    top: 133px;
   }
 
   .new-title{
@@ -771,7 +805,7 @@
   .news li{
     float: left;
     width: 164px;
-    height: 261px;
+    /* height: 261px; */
     margin: 10px;
     margin-bottom: 42px;
   }
@@ -886,6 +920,13 @@
 
   .about a{
     color: #dbdb13;
+  }
+
+  /* Правило только для Firefox */
+  @-moz-document url-prefix() {
+    .black-button, .priсe{
+      font-weight: normal !important;
+    }
   }
   
   footer{
