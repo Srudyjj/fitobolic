@@ -1070,7 +1070,10 @@
     .active{
       padding-bottom: 14px;  
     }
-    
+
+    .in-main-menu:hover{
+      padding-bottom: 14px;
+    }
     
     .banner{
       display: none;
