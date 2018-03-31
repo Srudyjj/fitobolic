@@ -652,7 +652,7 @@
     display: inline-block;
     height: 328px;
     width: 189px;
-    /* background: rgb(40, 180, 56); */
+    position: relative;
   }
 
   li form:focus{
@@ -1009,6 +1009,28 @@
     background: url(../images/social.png);
     background-position: -218px 0;
   }
+
+  /* @keyframes slide {
+    to {
+      position: fixed;
+      top:0;
+      animation: all 5s ease-in-out 0.5s
+    }
+  } */
+  @keyframes my_animation {
+  0% {
+    top: initial;
+  }
+
+  100% {
+    top: 0;
+  }
+  }
+  .to-basket {
+    animation: my_animation 1s linear;
+  }
+
+  
 
 /* responsive syles */
 
